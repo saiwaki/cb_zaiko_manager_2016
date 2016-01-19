@@ -244,6 +244,8 @@
       var url = "https://zaiko-manager-2016.herokuapp.com/stocks.json";
       $.get(url, function(data){
         $('.stock-num.center.cider').append(data.first_total)
+        $('.stock-num.center.coffee').append(data.second_total)
+        $('.stock-num.center.tea').append(data.third_total)
       })
     })
   </script>
