@@ -241,8 +241,10 @@
   </body>
   <script type="text/javascript">
     $(function(){
-      var x = $('title');
-      alert(x.text());
+      var url = "https://zaiko-manager-2016.herokuapp.com/stocks.json";
+      $.get(url, function(data){
+        alert(data.first_total);
+      })
     })
   </script>
 </html>
