@@ -75,9 +75,12 @@
   <script type="text/javascript">
     $(function(){
       var name = $('[data=name]');
+      var first_item = $('[data=first_item]');
+      var second_item = $('[data=second_item]');
+      var third_item = $('[data=third_item]');
       $('[data=submit]').click(function(){
         if(confirm("納品書を作成していいですか?")){
-          alert(name.val())
+          alert(name.val() + first_item.val() + second_item.val() + third_item.val())
         }
       })
     })
