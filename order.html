@@ -75,7 +75,9 @@
   <script type="text/javascript">
     $(function(){
       $('[data=submit]').click(function(){
-        alert("click")
+        if(confirm("納品書を作成していいですか?")){
+          alert("confirm")
+        }
       })
     })
   </script>
