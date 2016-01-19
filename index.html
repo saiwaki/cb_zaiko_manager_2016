@@ -246,6 +246,9 @@
         $('.stock-num.center.cider').append(data.first_total)
         $('.stock-num.center.coffee').append(data.second_total)
         $('.stock-num.center.tea').append(data.third_total)
+        data.orders.forEach(function(order, index){
+          $('.order_first_item_' + index).append(order.first_item);
+        })
       })
     })
   </script>
