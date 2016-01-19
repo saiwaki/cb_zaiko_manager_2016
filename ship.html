@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>在庫管理システム</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="content">
+        <ul>
+          <li>
+            <div class="title">
+              在庫管理システム
+            </div>
+          </li>
+          <li>
+            <a href="index.html">
+              在庫一覧
+            </a>
+          </li>
+          <li>
+            <a href="order.html" class="order">
+              発注書作成
+            </a>
+          </li>
+          <li>
+            <a href="ship.html" class="active ship">
+              納品書作成
+            </a>
+          </li>
+          <div class="clear"></div>
+        </ul>
+      </div>
+    </div>
+    <div id="main">
+      <div class="middle-content">
+        <h2>納品書作成(ship)</h2>
+        <form>
+          <div class="form-content">
+            <label>納品者名</label>
+            <input class="form-control" data="name" placeholder="さいわき">
+          </div>
+          <div class="form-content">
+            <label>納品数</label>
+            <div class="stock">
+              <img src="img/cider.png" width="120">
+              <br>
+              <strong>サイダー</strong>
+              <input class="form-control" data="first_item" placeholder=0 type="number">
+            </div>
+            <div class="stock">
+              <img src="img/coffee.png" width="120">
+              <br>
+              <strong>コーヒー</strong>
+              <input class="form-control" data="second_item" placeholder=0 type="number">
+            </div>
+            <div class="stock">
+              <img src="img/tea.png" width="120">
+              <br>
+              <strong>お茶</strong>
+              <input class="form-control" data="third_item" placeholder=0 type="number">
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="btn ship" data="submit">
+            納品する
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

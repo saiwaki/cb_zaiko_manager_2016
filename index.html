@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>在庫管理システム</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="content">
+        <ul>
+          <li>
+            <div class="title">
+              在庫管理システム
+            </div>
+          </li>
+          <li>
+            <a href="index.html" class="active">
+              在庫一覧
+            </a>
+          </li>
+          <li>
+            <a href="order.html" class="order">
+              発注書作成
+            </a>
+          </li>
+          <li>
+            <a href="ship.html" class="ship">
+              納品書作成
+            </a>
+          </li>
+          <div class="clear"></div>
+        </ul>
+      </div>
+    </div>
+    <div id="main">
+      <div class="content">
+        <table class="stock-table">
+          <tbody>
+            <tr>
+              <td class="title">商品</td>
+              <td class="stock center">
+                <img src="img/cider.png" width="120">
+                <br>
+                <strong>サイダー</strong>
+              </td>
+              <td class="stock center">
+                <img src="img/coffee.png" width="120">
+                <br>
+                <strong>コーヒー</strong>
+              </td>
+              <td class="stock center">
+                <img src="img/tea.png" width="120">
+                <br>
+                <strong>お茶</strong>
+              </td>
+            </tr>
+            <tr>
+              <td class="title">在庫数</td>
+              <td class="stock-num center cider"></td>
+              <td class="stock-num center coffee"></td>
+              <td class="stock-num center tea"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="order-table">
+          <tbody>
+            <tr>
+              <th colspan="5">発注書</th>
+            <tr>
+            <tr>
+              <td class="title center">サイダー</td>
+              <td class="title center">コーヒー</td>
+              <td class="title center">お茶</td>
+              <td class="title center">発注日</td>
+              <td class="title center">発注者</td>
+            </tr>
+            <tr>
+              <td class="order_first_item_0"></td>
+              <td class="order_second_item_0"></td>
+              <td class="order_third_item_0"></td>
+              <td class="order_created_time_0"></td>
+              <td class="order_name_0"></td>
+            </tr>
+            <tr>
+              <td class="order_first_item_1"></td>
+              <td class="order_second_item_1"></td>
+              <td class="order_third_item_1"></td>
+              <td class="order_created_time_1"></td>
+              <td class="order_name_1"></td>
+            </tr>
+            <tr>
+              <td class="order_first_item_2"></td>
+              <td class="order_second_item_2"></td>
+              <td class="order_third_item_2"></td>
+              <td class="order_created_time_2"></td>
+              <td class="order_name_2"></td>
+            </tr>
+            <tr>
+              <td class="order_first_item_3"></td>
+              <td class="order_second_item_3"></td>
+              <td class="order_third_item_3"></td>
+              <td class="order_created_time_3"></td>
+              <td class="order_name_3"></td>
+            </tr>
+            <tr>
+              <td class="order_first_item_4"></td>
+              <td class="order_second_item_4"></td>
+              <td class="order_third_item_4"></td>
+              <td class="order_created_time_4"></td>
+              <td class="order_name_4"></td>
+            </tr>
+            <tr>
+              <td class="order_first_item_5"></td>
+              <td class="order_second_item_5"></td>
+              <td class="order_third_item_5"></td>
+              <td class="order_created_time_5"></td>
+              <td class="order_name_5"></td>
+            </tr>
+            <tr>
+              <td class="order_first_item_6"></td>
+              <td class="order_second_item_6"></td>
+              <td class="order_third_item_6"></td>
+              <td class="order_created_time_6"></td>
+              <td class="order_name_6"></td>
+            </tr>
+            <tr>
+              <td class="order_first_item_7"></td>
+              <td class="order_second_item_7"></td>
+              <td class="order_third_item_7"></td>
+              <td class="order_created_time_7"></td>
+              <td class="order_name_7"></td>
+            </tr>
+            <tr>
+              <td class="order_first_item_8"></td>
+              <td class="order_second_item_8"></td>
+              <td class="order_third_item_8"></td>
+              <td class="order_created_time_8"></td>
+              <td class="order_name_8"></td>
+            </tr>
+            <tr>
+              <td class="order_first_item_9"></td>
+              <td class="order_second_item_9"></td>
+              <td class="order_third_item_9"></td>
+              <td class="order_created_time_9"></td>
+              <td class="order_name_9"></td>
+            </tr>
+
+          </tbody>
+        </table>
+
+         <table class="ship-table">
+          <tbody>
+            <tr>
+              <th colspan="5">納品書</th>
+            <tr>
+            <tr>
+              <td class="title center">サイダー</td>
+              <td class="title center">コーヒー</td>
+              <td class="title center">お茶</td>
+              <td class="title center">納品日</td>
+              <td class="title center">納品者</td>
+            </tr>
+            <tr>
+              <td class="ship_first_item_0"></td>
+              <td class="ship_second_item_0"></td>
+              <td class="ship_third_item_0"></td>
+              <td class="ship_created_time_0"></td>
+              <td class="ship_name_0"></td>
+            </tr>
+            <tr>
+              <td class="ship_first_item_1"></td>
+              <td class="ship_second_item_1"></td>
+              <td class="ship_third_item_1"></td>
+              <td class="ship_created_time_1"></td>
+              <td class="ship_name_1"></td>
+            </tr>
+            <tr>
+              <td class="ship_first_item_2"></td>
+              <td class="ship_second_item_2"></td>
+              <td class="ship_third_item_2"></td>
+              <td class="ship_created_time_2"></td>
+              <td class="ship_name_2"></td>
+            </tr>
+            <tr>
+              <td class="ship_first_item_3"></td>
+              <td class="ship_second_item_3"></td>
+              <td class="ship_third_item_3"></td>
+              <td class="ship_created_time_3"></td>
+              <td class="ship_name_3"></td>
+            </tr>
+            <tr>
+              <td class="ship_first_item_4"></td>
+              <td class="ship_second_item_4"></td>
+              <td class="ship_third_item_4"></td>
+              <td class="ship_created_time_4"></td>
+              <td class="ship_name_4"></td>
+            </tr>
+            <tr>
+              <td class="ship_first_item_5"></td>
+              <td class="ship_second_item_5"></td>
+              <td class="ship_third_item_5"></td>
+              <td class="ship_created_time_5"></td>
+              <td class="ship_name_5"></td>
+            </tr>
+            <tr>
+              <td class="ship_first_item_6"></td>
+              <td class="ship_second_item_6"></td>
+              <td class="ship_third_item_6"></td>
+              <td class="ship_created_time_6"></td>
+              <td class="ship_name_6"></td>
+            </tr>
+            <tr>
+              <td class="ship_first_item_7"></td>
+              <td class="ship_second_item_7"></td>
+              <td class="ship_third_item_7"></td>
+              <td class="ship_created_time_7"></td>
+              <td class="ship_name_7"></td>
+            </tr>
+            <tr>
+              <td class="ship_first_item_8"></td>
+              <td class="ship_second_item_8"></td>
+              <td class="ship_third_item_8"></td>
+              <td class="ship_created_time_8"></td>
+              <td class="ship_name_8"></td>
+            </tr>
+            <tr>
+              <td class="ship_first_item_9"></td>
+              <td class="ship_second_item_9"></td>
+              <td class="ship_third_item_9"></td>
+              <td class="ship_created_time_9"></td>
+              <td class="ship_name_9"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
