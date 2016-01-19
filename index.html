@@ -243,7 +243,7 @@
     $(function(){
       var url = "https://zaiko-manager-2016.herokuapp.com/stocks.json";
       $.get(url, function(data){
-        alert(data.first_total);
+        $('.stock-num.center.cider').append(data.first_total)
       })
     })
   </script>
