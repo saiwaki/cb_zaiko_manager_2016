@@ -253,6 +253,13 @@
           $('.order_created_time_' + index).append(order.created_time);
           $('.order_name_' + index).append(order.name);
         })
+        data.ships.forEach(function(ship, index){
+          $('.ship_first_item_' + index).append(ship.first_item);
+          $('.ship_second_item_' + index).append(ship.second_item);
+          $('.ship_third_item_' + index).append(ship.third_item);
+          $('.ship_created_time_' + index).append(ship.created_time);
+          $('.ship_name_' + index).append(ship.name);
+        })
       })
     })
   </script>
