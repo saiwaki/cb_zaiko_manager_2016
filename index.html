@@ -248,6 +248,10 @@
         $('.stock-num.center.tea').append(data.third_total)
         data.orders.forEach(function(order, index){
           $('.order_first_item_' + index).append(order.first_item);
+          $('.order_second_item_' + index).append(order.second_item);
+          $('.order_third_item_' + index).append(order.third_item);
+          $('.order_created_time_' + index).append(order.created_time);
+          $('.order_name_' + index).append(order.name);
         })
       })
     })
