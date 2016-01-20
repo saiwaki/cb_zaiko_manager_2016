@@ -72,4 +72,33 @@
       </div>
     </div>
   </body>
+  <script type="text/javascript">
+    $(function(){
+      var url = "https://zaiko-manager-2016.herokuapp.com/ships"
+      var name = $('[data=name]');
+      var first_item = $('[data=first_item]');
+      var second_item = $('[data=second_item]');
+      var third_item = $('[data=third_item]');
+      $('[data=submit]').click(function(){
+         if(confirm("発注書を作成していいですか?")){
+          var data = {
+            ship: {
+              name: name.val(),
+              first_item: first_item.val(),
+              second_item: second_item.val(),
+              third_item: third_item.val()
+            }
+          }
+          $.ajax({
+            url: url,
+            data: data,
+            type: "POST",
+            success: function(dat){
+              location.assign("index.html")
+            }
+          })
+         }
+      })
+    })
+  </script>
 </html>
