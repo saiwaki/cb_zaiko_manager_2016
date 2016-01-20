@@ -80,7 +80,15 @@
       var third_item = $('[data=third_item]');
       $('[data=submit]').click(function(){
         if(confirm("納品書を作成していいですか?")){
-          alert(name.val() + first_item.val() + second_item.val() + third_item.val())
+          var data = {
+            order: {
+              name: name.val(),
+              first_item: first_item.val(),
+              second_item: second_item.val(),
+              third_item: third_item.val()
+            }
+          }
+          console.log(data);
         }
       })
     })
