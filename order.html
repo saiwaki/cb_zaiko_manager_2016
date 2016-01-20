@@ -74,6 +74,7 @@
   </body>
   <script type="text/javascript">
     $(function(){
+      var url = "https://zaiko-manager-2016.herokuapp.com/orders"
       var name = $('[data=name]');
       var first_item = $('[data=first_item]');
       var second_item = $('[data=second_item]');
@@ -88,7 +89,14 @@
               third_item: third_item.val()
             }
           }
-          console.log(data);
+          $.ajax({
+            url: url,
+            data: data,
+            type: "POST",
+            success: function(dat){
+              console.log(dat);
+            }
+          })
         }
       })
     })
